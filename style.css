@@ -11,6 +11,16 @@
     justify-content: center;
 }
 
+.form-box-inner{
+    display: none;
+}
+
+.allcards{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
 .card{
     border-style: solid;
     width: 15%;
