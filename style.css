@@ -1,0 +1,22 @@
+.new-button-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+}
+
+.form-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    border-style: solid;
+    width: 15%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    margin-top: 40px;
+}
