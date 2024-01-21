@@ -15,13 +15,12 @@
     display: none;
 }
 
-.allcards{
+#allcards{
     display: flex;
-    flex-flow: row wrap;
-    align-items: center;
 }
 
 .card{
+    margin: 20px;
     border-style: solid;
     width: 15%;
     display: grid;

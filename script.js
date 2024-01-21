@@ -35,7 +35,7 @@ submitButton.addEventListener("click", function(event) {
   var newh1 = document.createElement("h1");
   var newh2 = document.createElement("h2");
   var newh3 = document.createElement("h3");
-  var newp = document.createElement('p');
+  var newbutton = document.createElement("button");
 
   newDiv.className = 'card';
 
@@ -45,13 +45,26 @@ submitButton.addEventListener("click", function(event) {
   newh1.textContent = document.getElementById("name").value;
   newh2.textContent = "by "+ document.getElementById("author").value;
   newh3.textContent = document.getElementById("pages").value + " Pages";
-  newp.textContent = document.getElementById("read").value;
+
+  var readStatus = document.getElementById("read").checked;
+  
+  let myFunction = (readStatus) => { if(readStatus=== true){
+    return "read";
+  }
+  else{
+    return "unread";
+  }
+};
+
+newbutton.textContent = myFunction(readStatus);
+
+
 
 
   newDiv.appendChild(newh1);
   newDiv.appendChild(newh2);
   newDiv.appendChild(newh3);
-  newDiv.appendChild(newp);
+  newDiv.appendChild(newbutton);
 
   allcards.appendChild(newDiv);
 
